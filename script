@@ -4,6 +4,6 @@ yum install nginx -y
 yum install git -y
 systemctl start nginx.service 
 systemctl enable nginx.service
-git clone https://github.com/viniciuscaol/portfolio.git
+git clone https://github.com/viniciuscaol/scsistemalinuxprojetofinal.git
 rm -rf /usr/share/nginx/html/
-cp -rf portfolio/ /usr/share/nginx/html/
+cp -rf scsistemalinuxprojetofinal/ /usr/share/nginx/html/
