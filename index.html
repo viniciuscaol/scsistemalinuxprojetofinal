@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="cabecalho">
-            <a href="https://ada.tech/" target="_blank"><img src="https://ada-site-frontend.s3.sa-east-1.amazonaws.com/home/header-logo.svg" class="sc-252c66c8-7 fWMNFR"></a>
+            <a href="https://ada.tech/" target="_blank"><img src="https://ada-site-frontend.s3.sa-east-1.amazonaws.com/home/header-logo.svg" alt="Logotipo da ADA" class="sc-252c66c8-7 fWMNFR"></a>
             <h1>Santander Coders Projeto Final Sistema Operacional Linux</h1>
             <a href="https://www.santanderopenacademy.com/pt_br/index.html" target="_blank"><img class="santander-header__logo-image" src="https://pro-becas-images-s3.s3.eu-west-1.amazonaws.com/images/logo-soa.svg" alt="Logotipo Santander Open Academy"></a>
         </div>
@@ -38,13 +38,32 @@
     </div>
     <footer>
         <div class="contato">
-            <a href="https://github.com/viniciuscaol" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://hub.docker.com/u/viniciuscaol" target="_blank"><i class="fa-brands fa-docker"></i></a>
-            <a href="https://www.digitalocean.com/?refcode=8318a5739de3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank"><i class="fa-brands fa-digital-ocean"></i></a>
-            <a href="https://www.linkedin.com/in/viniciuscaol" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/viniciuscaol/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/viniciuscaol" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://hub.docker.com/u/viniciuscaol" target="_blank" title="Docker Hub"><i class="fa-brands fa-docker"></i></a>
+            <a href="https://www.digitalocean.com/?refcode=8318a5739de3&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank" title="DigitalOcean"><i class="fa-brands fa-digital-ocean"></i></a>
+            <a href="https://www.linkedin.com/in/viniciuscaol" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/viniciuscaol/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
         <p>© 2024 <a href="http://viniciuscaol.site" target="_blank">Vinicius Caldas Oliveira</a></p>
     </footer>
+    <button id="scroll-top-btn">↑</button>
+    <script>
+        const scrollTopBtn = document.getElementById('scroll-top-btn');
+        function handleScroll() {
+            if (window.scrollY > 100) {
+                scrollTopBtn.style.display = 'block';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        scrollTopBtn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        handleScroll();
+    </script>
 </body>
 </html>

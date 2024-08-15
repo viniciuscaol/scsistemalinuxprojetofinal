@@ -28,8 +28,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3vh 10vh;
-    gap: 30px;
+    margin: 2em 5%;
+    gap: 2em;
     text-decoration: none;
     color: inherit;
 }
@@ -43,7 +43,7 @@ body {
     border: 0;
     height: 2px;
     background: #444;
-    margin: 20px 0;
+    margin: 1.5em 0;
 }
 
 .aluno {
@@ -51,24 +51,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3vh 10vh;
-    gap: 10px;
+    margin: 2em 5%;
+    gap: 1em;
 }
 
 .corpo h2 {
-    margin-bottom: 2vh;
+    margin-bottom: 1.5em;
 }
 
 .corpo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2vh 10vh;
+    margin: 2em 5%;
     line-height: 1.8;
 }
 
-.corpo .texto{
-    margin: 10px 25vh;
+.corpo .texto {
+    margin: 1em 15%;
 }
 
 .corpo p a {
@@ -106,3 +106,20 @@ footer a:hover {
     color: #A6F750;
 }
 
+#scroll-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#scroll-top-btn:hover {
+    background-color: #A6F750;
+}
