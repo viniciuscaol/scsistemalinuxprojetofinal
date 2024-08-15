@@ -55,16 +55,20 @@ body {
     gap: 10px;
 }
 
+.corpo h2 {
+    margin-bottom: 2vh;
+}
+
 .corpo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 3vh 10vh;
+    margin: 2vh 10vh;
     line-height: 1.8;
 }
 
-.corpo h2 {
-    margin-bottom: 2vh;
+.corpo .texto{
+    margin: 10px 25vh;
 }
 
 .corpo p a {
