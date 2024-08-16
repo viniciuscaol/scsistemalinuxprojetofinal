@@ -1,9 +1,32 @@
 #!/bin/bash
-yum update
-yum install nginx -y
-yum install git -y
+
+# Atualização do sistema
+echo "Atualizando o sistema..."
+yum update -y 
+
+# Instalação do Nginx
+echo "Instalando o Nginx..."
+yum install nginx -y 
+
+# Instalação do Git
+echo "Instalando o Git..."
+yum install git -y 
+
+# Habilitando e inicializando o serviço do Nginx
+echo "Iniciando e habilitando o Nginx..."
 systemctl start nginx.service 
-systemctl enable nginx.service
-git clone https://github.com/viniciuscaol/scsistemalinuxprojetofinal.git
-rm -rf /usr/share/nginx/html/
+systemctl enable nginx.service 
+
+# Clonando o repositório do projeto
+echo "Clonando o repositório do projeto..."
+git clone https://github.com/viniciuscaol/scsistemalinuxprojetofinal.git 
+
+# Removendo arquivos residuais do Nginx
+echo "Removendo arquivos padrão do Nginx..."
+rm -rf /usr/share/nginx/html/ 
+
+# Copiando os arquivos do projeto para o diretório do Nginx
+echo "Copiando arquivos do projeto para o diretório do Nginx..."
 cp -rf scsistemalinuxprojetofinal/ /usr/share/nginx/html/
+
+echo "Configuração concluída com sucesso!"
